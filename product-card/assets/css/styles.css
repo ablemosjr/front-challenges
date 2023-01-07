@@ -1,0 +1,142 @@
+
+@import url('global.css');
+
+body { background-color: var(--cream); }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+main .card {
+  width: 330px;
+  background-color: var(--white);
+  border-radius: .5rem;
+  margin: 0 auto;
+}
+
+main .card img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: .5rem .5rem 0 0;
+}
+
+main .card .info { padding: 1.2rem; }
+
+.card .info h2 {
+  font-size: .8rem;
+  color: var(--grayvishBlue);
+  font-weight: 500;
+  letter-spacing: .5rem;
+}
+
+.card .info h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  color: var(--darkBlue);
+  margin: 0;
+  padding: 0;
+}
+
+.card .info p {
+  font-size: .875rem;
+  color: var(--grayvishBlue);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.card .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+.card .price .new-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--darkCyan);
+}
+
+.card .price .old-price {
+  font-size: .875rem;
+  text-decoration: line-through;
+  margin-left: 1rem;
+}
+
+.card .info button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 1.2rem;
+  background-color: var(--darkCyan);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  border: 0;
+  border-radius: .5rem;
+  margin: 0;
+}
+
+.card .info span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card .info button span::before {
+  content: '';
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('../images/icon-cart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+.card .info button:hover { background-color: hsl(158, 35%, 20%); }
+
+@media only screen and (min-width: 768px) {
+  main .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 680px;
+  }
+
+  main .card img {
+    max-height: 100%;
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  main .card .info { 
+    padding: 0;
+    margin: 1.5rem 0 0 2rem;
+  }
+
+  .card .info h2 { font-size: 0.55rem; }
+
+  .card .info h1 { 
+    width: 70%; 
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0; 
+  }
+
+  .card .info p {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .card .info button { 
+    margin-top: 1rem; 
+    width: 90%;
+  }
+}
