@@ -1,3 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --desaturatedRed: hsl(0, 36%, 70%);
+  --softRed: hsl(0, 93%, 68%);
+  --dark-grayishRed: hsl(0, 6%, 24%);
+  --lightPink: hsl(0, 80%, 86%);
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
 /*
 # Front-end Style Guide
 
@@ -34,5 +50,4 @@ The designs were created to the following widths:
 
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weights: 300, 400, 600
-
 */
