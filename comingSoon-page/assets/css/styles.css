@@ -14,7 +14,7 @@ header {
   height: 100px;
 }
 
-main div.photo {
+div.photo {
   height: 45vh;
   background-image: url('../images/hero-mobile.jpg');
   background-repeat: no-repeat;
@@ -28,6 +28,8 @@ main .content {
   align-items: center;
   margin-top: 3rem;
 }
+
+main .content h1 { color: var(--dark-grayishRed); }
 
 main .content h1, span.title {
   display: flex;
@@ -54,14 +56,6 @@ main .content p {
   width: 85%;
   margin-bottom: 1.5rem;
 }
-/*
-main .content .call_to_action {
-  display: inline-block;
-  border: 1px solid var(--desaturatedRed);
-  border-radius: 2rem;
-  padding: 5px;
-}*/
-
 
 main .content .call_to_action {
   display: flex;
@@ -83,11 +77,9 @@ main .content
   border-radius: 2rem;
   margin-left: -5% 70%;
 }
-/*
-main .content 
-.call_to_action input.--has-error {
-  border-color: var(--softRed);
-}*/
+
+main .content .call_to_action 
+input:focus { outline-color: var(--softRed); }
 
 main .content 
 .call_to_action button {
@@ -99,21 +91,18 @@ main .content
   width: 4rem;
   height: 3rem;
   right: 12%;
-  background-color: var(--softRed);
-  border: 1px solid var(--softRed);
+  background: linear-gradient(135deg, var(--desaturatedRed), var(--softRed));
+  border: 0px solid var(--lightPink);
   border-radius: 2rem;
-  box-shadow: 2px 25px 30px 1px hsl(0, 36%, 70%);
+  box-shadow: 2px 10px 30px 1px hsl(0, 36%, 70%);
   cursor: pointer;
 }
 
-main .content 
-.call_to_action button:hover {
-  background-color: var(--lightPink);
-  border-color: var(--lightPink);
-}
+main .content .call_to_action 
+button:hover { background: var(--lightPink); }
 
-main .content 
-.call_to_action button::before {
+main .content .call_to_action 
+button::before {
   content: '';
   width: 1.3rem;
   height: 1.3rem;
@@ -124,6 +113,9 @@ main .content
   background-size: cover;
   visibility: hidden;
 }
+
+main .content .call_to_action 
+button.--has-error::before { visibility: visible; }
 
 ::placeholder {
   color: var(--desaturatedRed);
@@ -136,16 +128,77 @@ main .content
 #email_error { 
   width: 100%;
   font-size: .8rem;
-  color: var(--desaturatedRed);
+  font-weight: 600;
+  color: var(--errorColor);
   text-align: left;
   padding-left: 20%;
   margin-bottom: 4rem;
   visibility: hidden;
 }
+span#email_error.--has-error { visibility: visible; }
 
 @media screen and (min-width: 768px) {
   body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template: "header photo" 25vh
+    "main photo" 75vh / 60vw;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-position-y: bottom;
+  }
+  
+  div.photo { 
+    grid-area: photo; 
+    height: 100%;
+    background-image: url('../images/hero-desktop.jpg');
+  }
+
+  header { 
+    grid-area: header; 
+    height: 100%;
+    margin: 0;
+  }
+
+  main { grid-area: main; }
+
+  main .content  { align-items: flex-start; }
+  header, main .content, #email_error { margin: 0 0 0 15%; }
+
+  main .content h1, span.title, p {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  main .content h1, span.title {
+    width: 40%;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  main .content p {
+    font-size: 1rem;
+    width: 65%;
+    line-height: 2rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  main .content 
+  .call_to_action {
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  main .content 
+  .call_to_action input {
+    width: 30%;
+  }
+
+  main .content .call_to_action button {
+    width: 5rem;
+    right: 60%;
+  }
+
+  #email_error {
+    margin: 10px 0 0 1.5rem;
+    padding: 0;
   }
 }

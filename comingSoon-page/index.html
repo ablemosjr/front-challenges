@@ -23,30 +23,32 @@
       <img src="assets/images/logo.svg" alt="Logo - Base Apparel">
     </a>
   </header>
-
+  
+  <div class="photo" aria-label="Marketing Photo">
+  </div>
+  
   <main>
-    <div class="photo" aria-label="Marketing Photo">
-    </div>
-
     <section class="content">
       <h1><span class="title">We're</span> Coming Soon</h1>
 
       <p>Hello fellow shopppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
       <div class="call_to_action">
-        <input type="text" placeholder="Email Address">
+        <input type="text" id="inputEmail" placeholder="Email Address">
         
         <span class="icon_error"></span>
 
-        <button type="submit" aria-label="cta_email">
+        <button type="submit" id="sendEmail" aria-label="cta_email">
           <img src="assets/images/icon-arrow.svg" alt="Icon arrow - Send Email">
         </button>
       </div>
 
-      <span id="email_error">Please provide a valid email</span>
+      <span id="email_error"></span>
     </section>
   </main>
 
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
