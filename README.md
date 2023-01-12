@@ -8,6 +8,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 	- [QR Code](#qrcode)
 	- [Product preview](#productview)
 	- [Base Apparel - Coming Soon](#ba-comingsoon)
+	- [Interactive Rating card](#interactive-rating)
 - [Autor](#autor)
 
 ## Projetos
@@ -43,6 +44,17 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 - Pasta projeto: [comingSoon-page](https://github.com/ablemosjr/front-challenges/tree/main/comingSoon-page)
 - Live Site URL: [front-baseapparel.app](https://front-baseapparel.netlify.app/)
 - Desafio: [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
+
+
+<div id='interactive-rating'/>
+
+#### Interactive Rating card (responsivo)
+
+<img src="https://user-images.githubusercontent.com/89210954/212169009-86fc3e20-95bd-47c0-a5eb-6fcffa24f07b.png" alt="QR Code" width="400"/>
+
+- Pasta projeto: [interactive-rating](https://github.com/ablemosjr/front-challenges/tree/main/interactive-rating)
+- Live Site URL: [front-rating.app](https://front-rating.netlify.app/)
+- Desafio: [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 ## Autor
 
