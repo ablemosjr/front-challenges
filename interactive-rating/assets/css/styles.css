@@ -1,0 +1,113 @@
+
+@import url('global.css');
+@import url('components/_rounded.css');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--veryDarkBlue);
+}
+
+main {
+  width: 340px;
+  height: 345px;
+  color: var(--white);
+  background-color: var(--darkBlue);
+  border-radius: 1.2rem;
+  padding: 1.5rem 1.5rem;
+}
+
+main div img { 
+  width: 15px; 
+  height: 15px; 
+}
+
+main h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0 .5rem;
+}
+
+main p {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: var(--lightGrey);
+}
+
+main ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  color: var(--lightGrey);
+}
+
+main ul li:hover {
+  background-color: var(--mediumGrey);
+  color: var(--white);
+}
+
+main ul li.--is-selected {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+main button {
+  width: 100%;
+  padding: .8rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1.6rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  font-weight: 700;
+}
+
+main.submitted_state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.submitted_state img {
+  width: 150px;
+  margin-top: 1rem;
+}
+
+main.submitted_state div {
+  padding: 5px 15px;
+  background-color: var(--grey);
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+}
+
+main.submitted_state div p {
+  font-size: .875rem;
+  font-weight: 400;
+  color: var(--orange);
+}
+
+main.submitted_state p {
+  font-size: .9rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px){
+  main { width: 350px; }
+  main p { font-size: .8rem; }
+  
+  main.submitted_state { width: 350px; }
+  main.submitted_state p { font-size: .82rem; }
+}

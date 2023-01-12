@@ -1,0 +1,12 @@
+
+div._rounded,
+ul._rounded li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
