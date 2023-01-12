@@ -8,12 +8,14 @@
   --mediumGrey: hsl(216, 12%, 54%);
   --darkBlue: hsl(213, 19%, 18%);
   --veryDarkBlue: hsl(216, 12%, 8%);
+  --grey: rgba(77, 93, 100, 0.315);
 }
 
 * {
   font-family: 'Overpass', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
