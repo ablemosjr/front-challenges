@@ -25,7 +25,7 @@
     </section>
 
     <section class="content__signup">
-      <div class="content__text content__signup-price">
+      <div class="content__signup-price">
         <p>
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
@@ -33,23 +33,35 @@
 
       <div class="content__signup-form">
         <form>
-          <input type="text" placeholder="First Name"
-          name="first-name" id="first-name">
-          <span id="error_first-name">First Name cannot be empty</span>
+          <div class="form-inputs first-name">
+            <input type="text" placeholder="First Name"
+            name="first-name" id="first-name">
+          </div>
+          <span id="error_first-name" 
+          class="error">First Name cannot be empty</span>
           
-          <input type="text" placeholder="Last Name"
-          name="last-name" id="last-name">
-          <span id="error_last-name">Last Name cannot be empty</span>
+          <div class="form-inputs last-name">
+            <input type="text" placeholder="Last Name"
+            name="last-name" id="last-name">
+          </div>
+          <span id="error_last-name" 
+          class="error">Last Name cannot be empty</span>
           
           <!-- validation with js -->
-          <input type="text" placeholder="Email Address"
-          name="email" id="email">
-          <span id="error_email">Looks like this is not an email</span>
+          <div class="form-inputs email">
+            <input type="text" placeholder="Email Address"
+            name="email" id="email">
+          </div>
+          <span id="error_email"
+          class="error">Looks like this is not an email</span>
 
           <!-- validation with js -->
-          <input type="password" placeholder="Password"
-          name="password" id="password" required>
-          <span id="error_password">Password cannot be empty</span>
+          <div class="form-inputs password">
+            <input type="password" placeholder="Password"
+            name="password" id="password" required>
+          </div>
+          <span id="error_password"
+          class="error">Password cannot be empty</span>
 
           <button type="submit" id="send">CLAIM YOUR FREE TRIAL</button>
 
@@ -61,5 +73,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

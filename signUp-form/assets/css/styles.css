@@ -2,7 +2,6 @@
 @import url('global.css');
 
 body {
-  width: 100vw;
   height: auto;
   background-color: var(--red);
   background-image: url('../images/bg-intro-mobile.png');
@@ -47,7 +46,12 @@ body {
 }
 
 .content__signup-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
+  font-size: .8rem;
+  color: var(--white);
   padding: 15px;
   background-color: var(--blue);
   box-shadow: 0 7px .5px var(--shadow);
@@ -76,8 +80,33 @@ body {
   align-items: center;
 }
 
-.content__signup-form input {
+.content__signup-form .form-inputs {
   width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 1.2rem;
+}
+
+.content__signup-form div.form-inputs::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: 18%;
+  background-image: url('../images/icon-error.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+
+.content__signup-form 
+div.form-inputs.form--has-error::after { visibility: visible; }
+
+.content__signup-form input {
+  width: 100%;
   padding: .9rem .9rem .9rem 1.2rem;
   font-size: .8rem;
   font-weight: 600;
@@ -97,9 +126,6 @@ input::placeholder {
 
 .content__signup-form 
 input:focus { outline-color: var(--red); }
-
-.content__signup-form 
-input:first-child { margin-top: 1.5rem; }
 
 .content__signup-form button {
   width: 280px;
@@ -135,7 +161,7 @@ input:first-child { margin-top: 1.5rem; }
   cursor: pointer;
 }
 
-.content__signup-form form input + span {
+.content__signup-form form div + span {
   width: 280px;
   font-size: .6rem;
   font-style: italic;
@@ -144,4 +170,63 @@ input:first-child { margin-top: 1.5rem; }
   text-align: right;
   margin: 5px 0 0 0;
   display: none;
+}
+
+.content__signup-form form 
+.error.field--has-error { display: inline; }
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    background-image: url('../images/bg-intro-desktop.png');
+  }
+
+  .content{
+    display: grid; 
+    grid-template: "c-text c-signup" 1fr;
+  }
+  
+  .content__text { 
+    grid-area: c-text;
+    text-align: left; 
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10%;
+  }
+
+  .content__text h1 {
+    font-size: 2.5rem;
+    width: 350px;
+  }
+  .content__text p {
+    font-size: 1rem;
+    width: 500px;
+  }
+
+  .content__signup { grid-area: c-signup; }
+  .content__signup-price { width: 450px; }
+  .content__signup-price p { width: 400px; }
+  
+  .content__signup-form { 
+    width: 450px; 
+    height: 400px;
+  }
+
+  .content__signup-form form:first-child {
+    margin-top: 1rem;
+  }
+
+  .content__signup-form .form-inputs { width: 85%; }
+  .content__signup-form button { width: 85%; }
+  
+  .content__signup-terms { 
+    width: 90%;
+    margin: 0;
+  }
+
+  .content__signup-terms p { width: 100%; }
+}
+
+@media screen and (min-width: 1440px) {
+  .content__text { margin-left: 20%; }
 }
