@@ -68,6 +68,8 @@ body {
 
 .content__signup-form {
   width: 320px;
+  height: auto;
+  position: relative;
   background-color: var(--white);
   box-shadow: 0 8px .5px var(--shadow);
   border-radius: .5rem;
@@ -95,7 +97,7 @@ body {
   width: 1.2rem;
   height: 1.2rem;
   position: absolute;
-  right: 18%;
+  right: 50px;
   background-image: url('../images/icon-error.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -103,7 +105,7 @@ body {
 }
 
 .content__signup-form 
-div.form-inputs.form--has-error::after { visibility: visible; }
+div.form-inputs.field--has-error::after { visibility: visible; }
 
 .content__signup-form input {
   width: 100%;
@@ -173,7 +175,7 @@ input:focus { outline-color: var(--red); }
 }
 
 .content__signup-form form 
-.error.field--has-error { display: inline; }
+.error.form--has-error { display: inline; }
 
 @media screen and (min-width: 1024px) {
   body {
@@ -207,10 +209,7 @@ input:focus { outline-color: var(--red); }
   .content__signup-price { width: 450px; }
   .content__signup-price p { width: 400px; }
   
-  .content__signup-form { 
-    width: 450px; 
-    height: 400px;
-  }
+  .content__signup-form { width: 450px; }
 
   .content__signup-form form:first-child {
     margin-top: 1rem;
@@ -218,7 +217,9 @@ input:focus { outline-color: var(--red); }
 
   .content__signup-form .form-inputs { width: 85%; }
   .content__signup-form button { width: 85%; }
-  
+  .content__signup-form div.form-inputs::after { right: 60px; }
+  .content__signup-form form div + span { width: 84%; }
+
   .content__signup-terms { 
     width: 90%;
     margin: 0;
