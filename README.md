@@ -62,7 +62,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Intro component Sign up form (responsivo)
 
-<img src="https://user-images.githubusercontent.com/89210954/213205284-bfec5278-645d-448e-814c-d178c452933f.png" alt="QR Code" width="400"/>
+<img src="https://user-images.githubusercontent.com/89210954/213209539-6945040d-aef7-4e32-ab0c-c724cca2408d.png" alt="QR Code" width="400"/>
 
 - Pasta projeto: [signUp-form](https://github.com/ablemosjr/front-challenges/tree/main/signUp-form)
 - Live Site URL: [front-signup.app](https://front-signup.netlify.app/)
