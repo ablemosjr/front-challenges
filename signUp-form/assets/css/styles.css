@@ -181,6 +181,7 @@ input:focus { outline-color: var(--red); }
   body {
     width: 100%;
     background-image: url('../images/bg-intro-desktop.png');
+    background-size: auto;
   }
 
   .content{
