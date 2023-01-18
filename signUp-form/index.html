@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+
+  <!-- Normalize CSS Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+  integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Frontend Mentor Icon -->
+  <link rel="icon" href="assets/images/favicon-32x32.png">
+  <!-- Project Style CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="content">
+    <section class="content__text">
+      <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Whatching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="content__signup">
+      <div class="content__signup-price">
+        <p>
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <div class="content__signup-form">
+        <form name="free-trial">
+          <div class="form-inputs first-name">
+            <input type="text" placeholder="First Name"
+            name="first-name" id="first-name">
+          </div>
+          <span id="error_first-name" 
+          class="error">First Name cannot be empty</span>
+          
+          <div class="form-inputs last-name">
+            <input type="text" placeholder="Last Name"
+            name="last-name" id="last-name">
+          </div>
+          <span id="error_last-name" 
+          class="error">Last Name cannot be empty</span>
+          
+          <!-- validation with js -->
+          <div class="form-inputs email">
+            <input type="text" placeholder="Email Address"
+            name="email" id="email">
+          </div>
+          <span id="error_email"
+          class="error">Looks like this is not an email</span>
+
+          <!-- validation with js -->
+          <div class="form-inputs password">
+            <input type="password" placeholder="Password"
+            name="password" id="password">
+          </div>
+          <span id="error_password"
+          class="error">Password cannot be empty</span>
+
+          <button type="button" id="send">CLAIM YOUR FREE TRIAL</button>
+
+          <div class="content__signup-terms">
+            <p>By clicking the button, you are agreeing to our 
+            <span>Terms and Services</span></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
