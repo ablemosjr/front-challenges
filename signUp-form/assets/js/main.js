@@ -10,6 +10,10 @@ submitBtn.addEventListener('click', () => {
     password: validatePassword()
   }
 
+  forms.elements['first-name'].value = '';
+  forms.elements['last-name'].value = '';
+  forms.elements['email'].value = '';
+  forms.elements['password'].value = '';
 });
 
 

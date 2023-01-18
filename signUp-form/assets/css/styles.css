@@ -205,7 +205,11 @@ input:focus { outline-color: var(--red); }
     width: 500px;
   }
 
-  .content__signup { grid-area: c-signup; }
+  .content__signup { 
+    grid-area: c-signup; 
+    margin-top: -20px;
+  }
+
   .content__signup-price { width: 450px; }
   .content__signup-price p { width: 400px; }
   
@@ -225,7 +229,12 @@ input:focus { outline-color: var(--red); }
     margin: 0;
   }
 
-  .content__signup-terms p { width: 100%; }
+  .content__signup-terms p { 
+    width: 100%; 
+    font-size: .6rem; 
+  }
+
+  .content__signup-terms span { font-size: .6rem; }
 }
 
 @media screen and (min-width: 1440px) {
