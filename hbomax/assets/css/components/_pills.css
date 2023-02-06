@@ -1,0 +1,20 @@
+
+/* ====================
+ Pills 
+==================== */
+@import url('../global.css');
+
+.button {
+  background: var(--tertiary-color);
+  padding: 8px 22px;
+  border-radius: 50px;
+  transition: background 1s, color 1s;
+}
+
+/* ====================
+ Navbar pill
+==================== */
+.menu__item.button:hover {
+  background: var(--text-color);
+  color: var(--primary-color);
+}
