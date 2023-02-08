@@ -1,0 +1,212 @@
+
+@import url('global.css');
+
+/* ====================
+ Header
+==================== */
+.header {
+  position: relative;
+  padding: 100px 0 300px;
+  background: linear-gradient(-45deg, #56125B, #0F0F10, #271E6E);
+  background-size: 400% 400%;
+  margin-top: 120px;
+  animation: gradient 10s ease infinite alternate;
+}
+
+.header::after {
+  content: '';
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(0deg, var(--primary-color), transparent) ;
+  position: absolute;
+  bottom: 0;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 40px;
+  margin: auto;
+}
+
+.header__channels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.header__title {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.division {
+  background: var(--divider-bg-color);
+  width: 70%;
+  height: 5px;
+  max-width: 700px;
+}
+
+.offer {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.offer__price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.condition {
+  width: 300px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ====================
+ Main - Cards subscription
+==================== */
+.subsciption {
+  background: url('../images/background-movies-series.png');
+  background-size: cover;
+  position: relative;
+}
+
+.subscription__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.subscription__plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.subscription__button {
+  font-size: .875rem; 
+  border: none; 
+}
+
+.subscription__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+  min-height: 600px;
+  background: var(--card-bg-color);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.subscription__plan {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.subscription_price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.subscription__description {
+  font-size: 1.05rem;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+
+.subscription__description::marker {
+  content: '+';
+  font-size: 2rem;
+}
+
+/* ====================
+ Main - Discover
+==================== */
+.discover { margin: 100px auto; }
+
+.discover__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.discover__container { 
+  display: grid;
+  grid-template-columns: repeat(6, 100%);
+  grid-auto-flow: column;
+  gap: 20px; 
+  overflow: auto hidden;
+}
+
+.discover__card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: background .8s, border 1s;
+}
+
+.discover__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity .5s ease-in-out;
+}
+
+.discover__card:hover { border: 2px solid var(--tertiary-color); }
+.discover__card:hover .discover__image { opacity: 0; }
+
+/* HBO Channel hover */
+.discover__card:nth-child(1):hover { 
+  background-image: url('../images/hbo-hover_0.webp'); 
+}
+
+/* HBO Max Channel hover */
+.discover__card:nth-child(2):hover { 
+  background-image: url('../images/MAX-Hover.webp');
+}
+
+/* DC Channel hover */
+.discover__card:nth-child(3):hover { 
+  background-image: url('../images/DC-Hover.webp'); 
+}
+
+/* Warner Bross Channel hover */
+.discover__card:nth-child(4):hover { 
+  background-image: url('../images/WB-Hover.webp'); 
+}
+
+/* Cartoon Network Channel hover */
+.discover__card:nth-child(5):hover { 
+  background-image: url('../images/CN-Hover.png'); 
+}
+
+/* Champions League Channel hover */
+.discover__card:nth-child(6):hover { 
+  background-image: url('../images/UCL-Hover.webp'); 
+}
+
+/* ====================
+ Keyframe Animation
+==================== */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
