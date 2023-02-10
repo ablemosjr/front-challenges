@@ -10,6 +10,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 	- [Base Apparel - Coming Soon](#ba-comingsoon)
 	- [Interactive Rating card](#interactive-rating)
 	- [Sign up form](#signUp-form)
+	- [HBO Max](#hbomax)
 - [Autor](#autor)
 
 ## Projetos
@@ -29,7 +30,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Product preview (responsivo)
 
-<img src="https://user-images.githubusercontent.com/89210954/211119819-e4d80b09-570f-41d1-b23a-5467c0368673.png" alt="QR Code" width="400"/>
+<img src="https://user-images.githubusercontent.com/89210954/211119819-e4d80b09-570f-41d1-b23a-5467c0368673.png" alt="Product Preview" width="400"/>
 
 - Pasta projeto: [qrCode-component](https://github.com/ablemosjr/front-challenges/tree/main/product-card)
 - Live Site URL: [prod-preview.app](https://prod-preview.netlify.app/)
@@ -40,7 +41,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Base Apparel - Coming Soon page (responsivo)
 
-<img src="https://user-images.githubusercontent.com/89210954/211890458-1cc709a7-55ae-4624-b32c-907b36c9baee.png" alt="QR Code" width="400"/>
+<img src="https://user-images.githubusercontent.com/89210954/211890458-1cc709a7-55ae-4624-b32c-907b36c9baee.png" alt="Coming Soon page" width="400"/>
 
 - Pasta projeto: [comingSoon-page](https://github.com/ablemosjr/front-challenges/tree/main/comingSoon-page)
 - Live Site URL: [front-baseapparel.app](https://front-baseapparel.netlify.app/)
@@ -51,7 +52,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Interactive Rating card (responsivo)
 
-<img src="https://user-images.githubusercontent.com/89210954/212169009-86fc3e20-95bd-47c0-a5eb-6fcffa24f07b.png" alt="QR Code" width="400"/>
+<img src="https://user-images.githubusercontent.com/89210954/212169009-86fc3e20-95bd-47c0-a5eb-6fcffa24f07b.png" alt="Rating card" width="400"/>
 
 - Pasta projeto: [interactive-rating](https://github.com/ablemosjr/front-challenges/tree/main/interactive-rating)
 - Live Site URL: [front-rating.app](https://front-rating.netlify.app/)
@@ -62,11 +63,22 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Intro component Sign up form (responsivo)
 
-<img src="https://user-images.githubusercontent.com/89210954/213209539-6945040d-aef7-4e32-ab0c-c724cca2408d.png" alt="QR Code" width="400"/>
+<img src="https://user-images.githubusercontent.com/89210954/213209539-6945040d-aef7-4e32-ab0c-c724cca2408d.png" alt="Sign up form" width="400"/>
 
 - Pasta projeto: [signUp-form](https://github.com/ablemosjr/front-challenges/tree/main/signUp-form)
 - Live Site URL: [front-signup.app](https://front-signup.netlify.app/)
 - Desafio: [Intro component sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+
+
+<div id='hbomax'/>
+
+#### HBO Max (responsivo)
+
+<img src="https://user-images.githubusercontent.com/89210954/218158784-48babb51-f883-4b0e-aad4-3ff953205f5a.png" alt="HBO Max" width="400"/>
+
+- Pasta projeto: [hbomax](https://github.com/ablemosjr/front-challenges/tree/main/hbomax)
+- Live Site URL: [page-hbomax.app](https://page-hbomax.netlify.app/)
+- Desafio: [Desafio clone do site HBO Max em aula na Digital Innovation One, ministrada por Michele Ambrosio](https://github.com/micheleambrosio/hbomax)
 
 
 ## Autor
