@@ -1,0 +1,85 @@
+
+@import url('global.css');
+
+/* ====================
+ Form
+==================== */
+.content { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  margin: 170px 0 30px 0; 
+  font-family: 'Quicksand', cursive;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background: var(--form-bg-color);
+  border-radius: 5px;
+  padding: 40px;
+  gap: 20px;
+}
+
+.login__title {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.login__subtitle {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.login__field {
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 18px;
+  background: var(--form-field-bg-color);
+  border: var(--form-field-border);
+  border-radius: 8px;
+}
+
+.login__field:invalid { border-color: var(--form-field-error); }
+
+.login__options { 
+  text-align: left;
+  margin-top: 20px; 
+}
+
+.button--form { 
+  display: block;
+  margin-bottom: 20px; 
+}
+
+.login__forgot {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--link-color);
+}
+
+/* ====================
+ Media Queries
+==================== */
+@media screen and (min-width: 481px) {
+  .content { margin: 80px 0 20px 0; }
+
+  .button { 
+    display: inline;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('../images/background-movies-series.png');
+    background-size: cover;
+    height: 100vh;
+  }
+}

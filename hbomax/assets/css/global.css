@@ -1,0 +1,181 @@
+
+/* ====================
+Imports
+==================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+/* Pills component */
+@import url('components/_pills.css');
+
+/* ====================
+Global styles
+==================== */
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #020228;
+  --secondary-color: #ff00e5;
+  --tertiary-color: #b535f6;
+  --btn-bg-color-gradient: linear-gradient(
+    45deg,
+    #9b34ef 0%,
+    #490cb0 20%,
+    transparent 50%
+  );
+  --btn-link-bg-color: #fff;
+  --btn-link-color: #000;
+  --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+  --divider-bg-color: linear-gradient(
+    90deg,
+    #5516ba,
+    rgba(255, 0, 229, 0.5) 80%
+  );
+  --nav-bg-color: rgba(0, 0, 0, 0.3);
+  --text-color: #fff;
+  --link-color: #9e86ff;
+  --form-bg-color: rgba(211, 211, 211, 0.06);
+  --form-field-bg-color: rgba(0, 0, 0, 0.2);
+  --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+  --form-field-placeholder: rgba(255, 255, 255, 0.7);
+  --form-field-error: rgb(255, 76, 76);
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--text-color); 
+}
+
+a { color: var(--text-color) ; }
+p { font-family: 'Quicksand', cursive; }
+section { scroll-margin-top: 120px; }
+
+.container {
+  max-width: 1200px;
+  padding: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.big--text {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.small--text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+/* ====================
+ Navbar 
+==================== */
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  padding: 30px 24px;
+  background: var(--nav-bg-color);
+  z-index: 1;
+}
+
+.menu__logo { max-width: 100px; }
+.menu__logo-image { width: 100%; }
+
+.menu__item { 
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+}
+
+.menu__item:nth-child(1) { margin-right: 24px; }
+
+/* ====================
+ Footer
+==================== */
+.footer__link { 
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--link-color);
+  margin: 0 10px 15px 10px;
+  transition: color .5s ease-in-out;
+}
+
+.footer__link:hover { color: var(--text-color); }
+
+.footer__legal {
+  font-size: .7rem;
+  color: var(--link-color);
+  margin: 15px 0;
+}
+
+.footer__social { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px; 
+}
+
+/* ====================
+ Custom Scroll
+==================== */
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover { background: var(--secondary-color); }
+
+/* ====================
+ Media Queries
+==================== */
+@media screen and (min-width: 481px) {
+  .menu { 
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+  .menu__logo-image { width: 120px; }
+
+  .footer__link { 
+    display: inline;
+    margin-bottom: 0; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu { 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 24px;
+  }
+
+  .menu__logo-image { width: 150px; }
+  .footer__link { font-size: .875rem; }
+
+  section { scroll-margin-top: 90px; }
+}
