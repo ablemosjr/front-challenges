@@ -48,6 +48,8 @@ body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(12
 	visibility: hidden;
 }
 
+.carousel { width: 100%; }
+
 .carousel__cta {
 	width: 100%;
 	height: 100vh;
@@ -239,7 +241,7 @@ footer > img {
 		display: grid;
 		justify-content: center;
 		grid-template: 
-		"info cellphone" 100vh
+		"info cellphone" 80vh
 		/ 30vw 50vw;
 	}
 
@@ -247,10 +249,12 @@ footer > img {
 
 	.info__imagens { 
 		grid-area: cellphone;
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 
 	.info__imagens img { width: 40%; } 
+
+	.info__imagens img:first-child { margin-right: 15px; }
 
 	footer { 
 		flex-direction: row; 
@@ -273,3 +277,35 @@ footer > img {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.content__spotify {
+		grid-template:
+        "playlists info" 300px
+        ". info" 150px / 40vw 40vw;
+	}
+	
+	.spotify__playlists img { width: 45%;}
+	
+	.info__imagens img { width: 40%; }
+	
+	.content__info { 
+		/*height: 450px;*/
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"info cellphone" 450px
+		/ 40vw 40vw;
+	}
+
+	.info__ease { margin-right: 50px;}
+
+	.footer__social { display: flex; }
+}
+
+@media screen and (min-width: 1440px) {
+	.content__spotify {
+		grid-template:
+        "playlists info" 300px
+        ". info" 300px / 40vw 40vw;
+	}
+}
