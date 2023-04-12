@@ -19,7 +19,7 @@
 </head>
 <body>
   <!-- Menu de navegação -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/imagens/spotify.svg" alt="Spotify Logo" width="150px">
@@ -39,7 +39,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Baixar</a>
           </li>
-          <span>|</span>
+          <span></span>
           <li class="nav-item">
             <a class="nav-link" href="#">Inscrever-se</a>
           </li>
@@ -89,11 +89,9 @@
   <!-- Conteúdo principal -->
   <main class="content">
     <section class="content__spotify">
-      <div class="spotify__playlists">
+      <div class="spotify__playlists playlists--capas">
         <img src="./assets/imagens/img1.jpg" alt="Playlist 1">
         <img src="./assets/imagens/img2.jpg" alt="Playlist 2">
-      </div>
-      <div class="spotify__playlists">
         <img src="./assets/imagens/img3.jpg" alt="Playlist 3">
         <img src="./assets/imagens/img4.jpg" alt="Playlist 4">
       </div>
@@ -137,30 +135,33 @@
   <footer>
     <img src="./assets/imagens/spotify.svg" alt="Spotify Logo">
 
-    <div class="footer__links">
-      <span>Company</span>
+    <section class="footer__more">
+      <div class="footer__links">
+        <span>Company</span>
+  
+        <a href="#">Sobre</a>
+        <a href="#">Empregos</a>
+        <a href="#">Imprensa</a>
+        <a href="#">Novidades</a>
+      </div>
+  
+      <div class="footer__links">
+        <span>Comunidades</span>
+  
+        <a href="#">Artistas</a>
+        <a href="#">Desenvolvedores</a>
+        <a href="#">Marcas</a>
+      </div>
+  
+      <div class="footer__links">
+        <span>Link Uteis</span>
+  
+        <a href="#">Ajuda</a>
+        <a href="#">Presentes</a>
+        <a href="#">Player da Web</a>
+      </div>
+    </section>
 
-      <a href="#">Sobre</a>
-      <a href="#">Empregos</a>
-      <a href="#">Imprensa</a>
-      <a href="#">Novidades</a>
-    </div>
-
-    <div class="footer__links">
-      <span>Comunidades</span>
-
-      <a href="#">Artistas</a>
-      <a href="#">Desenvolvedores</a>
-      <a href="#">Marcas</a>
-    </div>
-
-    <div class="footer__links">
-      <span>Link Uteis</span>
-
-      <a href="#">Ajuda</a>
-      <a href="#">Presentes</a>
-      <a href="#">Player da Web</a>
-    </div>
 
     <div class="footer__social">
       <a href="#"><img src="./assets/imagens/twitter.png" alt="Twitter Logo"></a>

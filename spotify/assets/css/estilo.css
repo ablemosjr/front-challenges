@@ -94,7 +94,6 @@ body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(12
 .content {
 	display: flex;
 	flex-direction: column;
-	position: relative;
 	overflow: hidden;
 }
 
@@ -119,7 +118,10 @@ body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(12
 	margin-top: 12px;
 }
 
-.spotify__info p { color: #919496; }
+.spotify__info p { 
+	color: #919496; 
+	font-size: 1.1rem;
+}
 
 .spotify__info p:last-child { margin-bottom: 0; } 
 
@@ -141,7 +143,10 @@ body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(12
 	color: #9bf0e1;
 }
 
-.info__ease p { color: white; }
+.info__ease p { 
+	color: white; 
+	font-size: 1.1rem;
+}
 
 .info__imagens { transform: rotate(30deg); }
 
@@ -166,7 +171,6 @@ footer > img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 50%;
 	padding: 10px;
 }
 
@@ -185,3 +189,87 @@ footer > img {
 }
 
 .footer__social { margin-top: 10px; }
+
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-thumb { background: #7c26f8; }
+
+::-webkit-scrollbar-thumb:hover { background: rgba(126, 38, 248, 0.6); }
+
+@media screen and (min-width: 768px) {
+	.navbar span {
+		width: 1px;
+		height: 20px;
+		background-color: white;
+		margin: 7px 10px 4px 10px;
+		visibility: visible;
+	}
+	
+	.collapse {
+		justify-content: flex-end;
+		margin-right: 50px;
+	}
+
+	.content__spotify {
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"playlists info" 300px
+		". info" 150px
+		/ 45vw 40vw;
+		gap: 10px;
+	}
+
+	.spotify__playlists {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	 }
+
+	.spotify__playlists .playlists--capas {
+		grid-area: playlists;
+	}
+	
+	.spotify__playlists img { width: 45%;}
+
+	.spotify__info { grid-area: info; }
+
+	.content__info {
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"info cellphone" 100vh
+		/ 30vw 50vw;
+	}
+
+	.info__ease { grid-area: info; }
+
+	.info__imagens { 
+		grid-area: cellphone;
+		margin-top: 30px;
+	}
+
+	.info__imagens img { width: 40%; } 
+
+	footer { 
+		flex-direction: row; 
+		justify-content: space-between;
+	}
+
+	.footer__more { 
+		width: 50%;
+		display: flex; 
+		flex-direction: row; 
+		justify-content: space-between;
+	}
+
+	.footer__links { align-items: flex-start; }
+
+	.footer__social {
+		display: grid;
+		gap: 10px;
+		transition: 5s ease-in-out;
+	}
+}
+
