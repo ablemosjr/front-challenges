@@ -11,6 +11,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 	- [Interactive Rating card](#interactive-rating)
 	- [Sign up form](#signUp-form)
 	- [HBO Max](#hbomax)
+   	- [Spotify](#spotify)
 - [Autor](#autor)
 
 ## Projetos
@@ -80,6 +81,18 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 - Live Site URL: [page-hbomax.app](https://page-hbomax.netlify.app/)
 - Desafio: [Desafio clone do site HBO Max em aula na Digital Innovation One, ministrada por Michele Ambrosio](https://github.com/micheleambrosio/hbomax)
 
+
+<div id='spotify'/>
+
+#### Spotify (responsivo)
+
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/248385951-69ba10cb-f79c-4cb4-9ae3-27c861b41e73.png" alt="HBO Max" width="400"/>
+
+- Pasta projeto: [spotify](https://github.com/ablemosjr/front-challenges/tree/main/spotify)
+- Live Site URL: [page-spotify.app](https://page-spotify.netlify.app/)
+- Desafio: Desafio clone do site Spotify em aula ministrada pelo Prof. Kleber na FACENS Sorocaba (Turma AS018TSN1)
+
+<br>
 
 ## Autor
 
