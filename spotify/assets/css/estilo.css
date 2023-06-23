@@ -1,0 +1,364 @@
+/*
+	.Cores{
+	#ff4169,#7c26f8, rgba(0,0,0,0.6);
+	color: white;
+	color: #9bf0e1;
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+	background: white;
+	color: white;
+	background: #7c25f8;
+	background: #6207e3;
+	color: white;
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+	background: white;
+	color: white;
+	color: #7c25f8;
+	color: white;
+	color: #9bf0e1;
+	background: #000;
+	color: #919496;
+	color: white;
+	color: #9bf0e1;
+	color: white;
+	}
+*/
+
+* {
+	font-family: sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html { 
+	background-image: url('../imagens/capa.png'); 
+	background-attachment: fixed;
+}
+
+body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(126, 38, 248, 0.6)); }
+
+.navbar { background-color: rgba(0,0,0,0.6) !important; }
+
+.navbar-nav span {
+	color: white;
+	font-size: 1.2rem;
+	visibility: hidden;
+}
+
+a { 
+	font-size: calc(1rem + .5vw);
+	color: white !important;
+}
+
+a:hover {	color: #9bf0e1 !important; }
+
+.carousel { 
+	width: 100%; 
+	height: 20vh;
+}
+
+.carousel__cta {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-item { transition: transform .6s ease-in-out; }
+
+.carousel__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 30px 0 30px;
+}
+
+.carousel__info h2 {
+	color: white;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.carousel__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: .875rem;
+	color: white;
+	text-transform: uppercase;
+	background-color: transparent;
+	padding: 6px 10px;
+	border: solid 1px white;
+	border-radius: 1.2rem;
+	transition: .5s ease-in-out;
+}
+
+.btn--color {
+	background-color: #7c25f8;
+	border-color: #7c25f8;
+	margin-bottom: 10px;
+}
+
+.btn--white:hover {
+	color: #000;
+	background-color: white;
+}
+
+.btn--white:hover img { display: none; }
+
+.content {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.content__spotify {
+	height: auto;
+	background-color: white;
+	padding: 15px;
+}
+
+.spotify__playlists {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.spotify__playlists img { width: 100%; }
+
+.spotify__info h1, h5 {
+	color: #7c25f8;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.spotify__info p { 
+	color: #919496; 
+	font-size: 1.1rem;
+}
+
+.spotify__info p:last-child { margin-bottom: 0; } 
+
+.content__info { 
+	width: 100%;
+	height: auto; 
+}
+
+.info__ease { padding: 15px; }
+
+.info__ease h2 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.info__ease h5 {
+	font-size: 1.6rem;
+	color: #9bf0e1;
+}
+
+.info__ease p { 
+	color: white; 
+	font-size: 1.1rem;
+}
+
+.info__imagens { transform: rotate(30deg); }
+
+.info__imagens img { width: 60%; }
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding: 20px;
+}
+
+footer > img { 
+	width: 100px; 
+	margin-bottom: 10px;
+}
+
+.footer__links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.footer__links span {
+	text-transform: uppercase;
+	font-size: .875rem;
+	color: #919496;
+	margin-bottom: 5px;
+}
+
+.footer__links a {
+	text-decoration: none;
+	color: white;
+	font-size: .9rem;
+	margin: 2px 0;
+}
+
+.footer__social { margin-top: 10px; }
+
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-thumb { background: #7c26f8; }
+
+::-webkit-scrollbar-thumb:hover { background: rgba(126, 38, 248, 0.6); }
+
+@media screen and (min-width: 768px) {
+	.navbar span {
+		width: 1px;
+		height: 20px;
+		background-color: white;
+		margin: 7px 10px 4px 10px;
+		visibility: visible;
+	}
+	
+	.collapse {
+		justify-content: flex-end;
+		margin-right: 50px;
+	}
+
+	.carousel__info h2 { font-size: calc(1.8rem + 2vw); }
+
+	.carousel__button {
+		font-size: calc(.875rem + .2vw);
+		padding: calc(6px + .5vw) calc(10px + 1vw);
+		border-radius: calc(1.2rem + 4vw);
+	}
+
+	.content__spotify {
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"playlists info" 300px
+		". info" 150px
+		/ 45vw 40vw;
+		gap: 10px;
+	}
+
+	.spotify__playlists {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	 }
+
+	.spotify__playlists .playlists--capas {
+		grid-area: playlists;
+	}
+	
+	.spotify__playlists img { width: 45%;}
+
+	.spotify__info { grid-area: info; }
+
+	.content__info {
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"info cellphone" 80vh
+		/ 32vw 50vw;
+	}
+
+	.info__ease { grid-area: info; }
+
+	.info__imagens { 
+		grid-area: cellphone;
+		margin-top: 20px;
+	}
+
+	.info__imagens img { width: 40%; } 
+
+	.info__imagens img:first-child { margin-right: 15px; }
+
+	footer { 
+		flex-direction: row; 
+		justify-content: space-between;
+	}
+
+	.footer__more { 
+		width: 50%;
+		display: flex; 
+		flex-direction: row; 
+		justify-content: space-between;
+	}
+
+	.footer__links { align-items: flex-start; }
+
+	.footer__social {
+		display: grid;
+		gap: 10px;
+		transition: 5s ease-in-out;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.content__spotify {
+		grid-template:
+        "playlists info" 300px
+        ". info" calc(160px + 2.5vw) / 40vw 40vw;
+	}
+	
+	.content h1 { font-size: calc(2rem + 1vw); }
+	
+	.content h5 { font-size: calc(1rem + 1vw); }
+
+	.content p { font-size: calc(.8rem + .5vw); }
+
+	.spotify__playlists img { width: 45%;}
+	
+	.info__imagens img { width: 40%; }
+	
+	.content__info {
+		display: grid;
+		justify-content: center;
+		grid-template: 
+		"info cellphone" 450px
+		/ 42vw 40vw;
+	}
+
+	.info__ease { margin-right: 10%;}
+
+	.info__ease h2 { font-size: calc(2.5rem + 0.5vw); }
+
+	.info__ease h5 { font-size: calc(1.5rem + 0.5vw); }
+
+	.footer__social { display: flex; }
+}
+
+@media screen and (min-width: 1440px) {
+	.content__spotify {
+		grid-template:
+        "playlists info" 300px
+        ". info" 300px / 40vw 40vw;
+	}
+
+	.info__ease { margin-right: 100px; }
+}
+
+@media screen and (min-width: 2560px) {
+	.content__spotify {
+		grid-template:
+        "playlists info" 300px
+        ". info" 650px / 40vw 40vw;
+	}
+
+	.info__imagens img { width: 30%; }
+
+	.content__info {
+		grid-template: 
+		"info cellphone" 60vh
+		/ 32vw 50vw;
+	}
+}
