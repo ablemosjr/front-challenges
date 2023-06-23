@@ -1,30 +1,3 @@
-/*
-	.Cores{
-	#ff4169,#7c26f8, rgba(0,0,0,0.6);
-	color: white;
-	color: #9bf0e1;
-    color: rgba(255,255,255,.5);
-    border-color: rgba(255,255,255,0.5);
-	background: white;
-	color: white;
-	background: #7c25f8;
-	background: #6207e3;
-	color: white;
-	border: 2px solid white;
-	background-color: white;
-	color: black;
-	background: white;
-	color: white;
-	color: #7c25f8;
-	color: white;
-	color: #9bf0e1;
-	background: #000;
-	color: #919496;
-	color: white;
-	color: #9bf0e1;
-	color: white;
-	}
-*/
 
 * {
 	font-family: sans-serif;
@@ -34,13 +7,19 @@
 }
 
 html { 
-	background-image: url('../imagens/capa.png'); 
+
+}
+
+body { 
+	background: url('../imagens/capa.png'), url('../imagens/ruido.png'),
+	linear-gradient(to right top, rgba(255, 65, 106),rgba(126, 38, 248)); 
 	background-attachment: fixed;
 }
 
-body { background: linear-gradient(to right top, rgba(255, 65, 106, 0.6),rgba(126, 38, 248, 0.6)); }
+.navbar { 
+	background-color: rgba(0,0,0,0.6) !important;
 
-.navbar { background-color: rgba(0,0,0,0.6) !important; }
+}
 
 .navbar-nav span {
 	color: white;
@@ -82,6 +61,12 @@ a:hover {	color: #9bf0e1 !important; }
 	font-size: 1.8rem;
 	font-weight: bold;
 	margin-bottom: 30px;
+}
+
+.carousel__group--buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .carousel__button {
@@ -304,6 +289,13 @@ footer > img {
 }
 
 @media screen and (min-width: 1024px) {
+	.carousel__group--buttons {
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+	button.carousel__button.btn--white { margin-left: 10px; }
+
 	.content__spotify {
 		grid-template:
         "playlists info" 300px
