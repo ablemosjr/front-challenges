@@ -17,5 +17,46 @@
 </head>
 <body>
 
+  <main>
+    <section class="card">
+      <!-- 'Form' Inputs -->
+      <form class="card__form">
+
+        <div class="form__input">
+          <div class="input__day">
+            <label for="day-input">Day</label>
+            <input type="text" id="day-input" placeholder="DD" name="day-input">
+            <span class="error">Error</span>
+          </div>
+          <div class="input__month">
+            <label for="month-input">Month</label>
+            <input type="text" id="month-input" placeholder="MM" name="month-input">
+            <span class="error">Error</span>
+          </div>
+          <div class="input__year">
+            <label for="year-input">Year</label>
+            <input type="text" id="year-input" placeholder="YYYY" name="year-input">
+            <span class="error">Error</span>
+          </div>
+        </div>
+  
+        <!-- Separator -->
+        <div class="form__separator">
+          <div class="separator__line"></div>
+          <button class="separator__button"></button>
+        </div>  
+
+      </form>
+
+      <!-- Print Data -->
+      <div class="card__printer">
+        <p><span id="years-printer" class="printer__color">--</span> years</p>
+        <p><span id="months-printer" class="printer__color">--</span> months</p>
+        <p><span id="days-printer" class="printer__color">--</span> days</p>
+      </div>
+
+    </section>
+  </main>
+
 </body>
 </html>
