@@ -27,7 +27,8 @@ Inputs
 .form__input {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .input__day,
@@ -40,7 +41,7 @@ Inputs
 .input__day > label,
 .input__month > label,
 .input__year > label {
-  font-size: .8rem;
+  font-size: .65rem;
   font-weight: 700;
   color: var(--smokeyGrey);
   text-transform: uppercase;
@@ -51,13 +52,14 @@ Inputs
 .input__day > input,
 .input__month > input,
 .input__year > input {
-  width: 85%;
-  padding: 10px;
+  width: 95px;
+  padding: 12px;
   outline: none;
   border: 1px solid var(--lightGrey);
   border-radius: 6px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .colorFocus:focus { border-color: var(--purple); }
@@ -73,7 +75,48 @@ input:invalid {
 /* ===================== 
 Separator
 ===================== */
+.form__separator {
+  position: relative;
+  width: 100%;
+}
+
+.separator__line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--lightGrey);
+  position: absolute;
+}
+
+.separator__button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.separator__button > span::before {
+  content: '';
+  background-image: url('../images/icon-arrow.svg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+.separator__button:hover {
+  background-color: var(--offBlack);
+}
 
 /* ===================== 
 Printer
 ===================== */
+.card__printer {
+  margin-top: 100px;
+}
