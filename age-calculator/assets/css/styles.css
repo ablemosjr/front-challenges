@@ -12,7 +12,7 @@ body {
 .card {
   width: 95%;
   background-color: var(--white);
-  padding: 30px  15px;
+  padding: 40px  20px;
   border-radius: 15px;
   border-bottom-right-radius: 100px;
   position: absolute;
@@ -29,6 +29,13 @@ Inputs
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 60px;
+}
+
+.form__input div > span {
+  font-size: .75rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--lightRed);
 }
 
 .input__day,
@@ -60,6 +67,7 @@ Inputs
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .colorFocus:focus { border-color: var(--purple); }
@@ -68,9 +76,7 @@ input:invalid {
   border-color: var(--lightRed);
 }
 
-.error {
-  display: none;
-}
+.error { display: none; }
 
 /* ===================== 
 Separator
