@@ -1,2 +1,79 @@
 
 @import url('global.css');
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--offWhite);
+  position: relative;
+}
+
+
+.card {
+  width: 95%;
+  background-color: var(--white);
+  padding: 30px  15px;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===================== 
+Inputs
+===================== */
+.form__input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.input__day,
+.input__month,
+.input__year {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__day > label,
+.input__month > label,
+.input__year > label {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--smokeyGrey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.input__day > input,
+.input__month > input,
+.input__year > input {
+  width: 85%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid var(--lightGrey);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.colorFocus:focus { border-color: var(--purple); }
+
+input:invalid {
+  border-color: var(--lightRed);
+}
+
+.error {
+  display: none;
+}
+
+/* ===================== 
+Separator
+===================== */
+
+/* ===================== 
+Printer
+===================== */
