@@ -32,7 +32,6 @@
               name="day-input"
               maxlength="2"
             >
-            <span class="error" id="input__day--err">Error</span>
           </div>
           <div class="input__month">
             <label for="month-input">Month</label>
@@ -44,7 +43,6 @@
               name="month-input"
               maxlength="2"
             >
-            <span class="error">Error</span>
           </div>
           <div class="input__year">
             <label for="year-input">Year</label>
@@ -54,17 +52,15 @@
               id="year-input" 
               placeholder="YYYY" 
               name="year-input"
-              minlength="4"
               maxlength="4"
             >
-            <span class="error">Error</span>
           </div>
         </div>
   
         <!-- Separator -->
         <div class="form__separator">
           <div class="separator__line"></div>
-          <button class="separator__button">
+          <button class="separator__button" id="calculate-btn">
             <span></span>
           </button>
         </div>  
@@ -79,6 +75,7 @@
 
     </section>
   </main>
-
+  
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

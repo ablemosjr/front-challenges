@@ -31,13 +31,6 @@ Inputs
   margin-bottom: 60px;
 }
 
-.form__input div > span {
-  font-size: .75rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--lightRed);
-}
-
 .input__day,
 .input__month,
 .input__year {
@@ -72,11 +65,19 @@ Inputs
 
 .colorFocus:focus { border-color: var(--purple); }
 
-input:invalid {
-  border-color: var(--lightRed);
-}
+input:invalid { border-color: var(--lightRed); }
 
-.error { display: none; }
+.invalid input { border-color: var(--lightRed); }
+
+.invalid label { color: var(--lightRed); }
+
+.invalid::after {
+  content: attr(message);
+  font-size: .52em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--lightRed);
+}
 
 /* ===================== 
 Separator
