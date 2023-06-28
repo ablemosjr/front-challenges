@@ -1,5 +1,6 @@
 
 @import url('global.css');
+@import url('responsive.css');
 
 body {
   min-height: 100vh;
@@ -139,4 +140,62 @@ Printer
   font-size: 3.2rem;
   font-weight: 800;
   color: var(--purple);
+}
+
+/* ===================== 
+Responsive
+===================== */
+@media screen and (min-width: 610px) {
+  .card { width: 60vw; }
+}
+
+@media screen and (min-width: 768px) {
+  .card { padding: 40px 40px; }
+
+  .form__input {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .separator__button { left: 95%; }
+  
+  .card__printer { margin-top: 50px; }
+}
+
+@media screen and (min-width: 992px) {
+  .card { width: 45vw; }
+
+  .form__input { width: 80%; }
+  
+  .card__printer > p { font-size: 3.7rem; }
+  
+  .printer__color { font-size: 3.7rem; }
+}
+
+@media screen and (min-width: 1366px) {
+  .card { width: 40vw; }
+
+  .form__input { width: 82%; }
+
+  .input__day > input,
+  .input__month > input,
+  .input__year > input {
+    width: 115px;
+    padding: 12px 15px;
+    border-radius: 8px;
+  }
+
+  .invalid::after { 
+    font-size: .65em; 
+    margin-bottom: 10px;
+  }
+
+  .separator__button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .card__printer > p { font-size: 4.5rem; }
+  
+  .printer__color { font-size: 4.5rem; }
 }
