@@ -1,0 +1,201 @@
+
+@import url('global.css');
+@import url('responsive.css');
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--offWhite);
+  position: relative;
+}
+
+
+.card {
+  width: 95%;
+  background-color: var(--white);
+  padding: 40px  20px;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===================== 
+Inputs
+===================== */
+.form__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.input__day,
+.input__month,
+.input__year {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__day > label,
+.input__month > label,
+.input__year > label {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--smokeyGrey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.input__day > input,
+.input__month > input,
+.input__year > input {
+  width: 95px;
+  padding: 12px;
+  outline: none;
+  border: 1px solid var(--lightGrey);
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.colorFocus:focus { border-color: var(--purple); }
+
+input:invalid { border-color: var(--lightRed); }
+
+.invalid input { border-color: var(--lightRed); }
+
+.invalid label { color: var(--lightRed); }
+
+.invalid::after {
+  content: attr(message);
+  font-size: .52em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--lightRed);
+}
+
+/* ===================== 
+Separator
+===================== */
+.form__separator {
+  position: relative;
+  width: 100%;
+}
+
+.separator__line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--lightGrey);
+  position: absolute;
+}
+
+.separator__button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.separator__button > span::before {
+  content: '';
+  background-image: url('../images/icon-arrow.svg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+.separator__button:hover {
+  background-color: var(--offBlack);
+}
+
+/* ===================== 
+Printer
+===================== */
+.card__printer {
+  margin-top: 120px;
+}
+
+.card__printer > p {
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--offBlack);
+}
+
+.printer__color {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--purple);
+}
+
+/* ===================== 
+Responsive
+===================== */
+@media screen and (min-width: 610px) {
+  .card { width: 60vw; }
+}
+
+@media screen and (min-width: 768px) {
+  .card { padding: 40px 40px; }
+
+  .form__input {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .separator__button { left: 95%; }
+  
+  .card__printer { margin-top: 50px; }
+}
+
+@media screen and (min-width: 992px) {
+  .card { width: 45vw; }
+
+  .form__input { width: 80%; }
+  
+  .card__printer > p { font-size: 3.7rem; }
+  
+  .printer__color { font-size: 3.7rem; }
+}
+
+@media screen and (min-width: 1366px) {
+  .card { width: 40vw; }
+
+  .form__input { width: 82%; }
+
+  .input__day > input,
+  .input__month > input,
+  .input__year > input {
+    width: 115px;
+    padding: 12px 15px;
+    border-radius: 8px;
+  }
+
+  .invalid::after { 
+    font-size: .65em; 
+    margin-bottom: 10px;
+  }
+
+  .separator__button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .card__printer > p { font-size: 4.5rem; }
+  
+  .printer__color { font-size: 4.5rem; }
+}

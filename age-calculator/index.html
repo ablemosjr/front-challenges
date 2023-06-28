@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator App</title>
+
+  <!-- Normalize CSS Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+  integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Frontend Mentor Icon -->
+  <link rel="icon" href="assets/images/favicon-32x32.png">
+  <!-- Project Style CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <main>
+    <section class="card">
+      <!-- 'Form' Inputs -->
+      <section class="card__form">
+        <div class="form__input">
+          <div class="input__day">
+            <label for="day-input">Day</label>
+            <input 
+              class="colorFocus" 
+              type="text" 
+              id="day-input" 
+              placeholder="DD" 
+              name="day-input"
+              maxlength="2"
+            >
+          </div>
+          <div class="input__month">
+            <label for="month-input">Month</label>
+            <input 
+              class="colorFocus" 
+              type="text" 
+              id="month-input" 
+              placeholder="MM" 
+              name="month-input"
+              maxlength="2"
+            >
+          </div>
+          <div class="input__year">
+            <label for="year-input">Year</label>
+            <input 
+              class="colorFocus" 
+              type="text" 
+              id="year-input" 
+              placeholder="YYYY" 
+              name="year-input"
+              maxlength="4"
+            >
+          </div>
+        </div>
+  
+        <!-- Separator -->
+        <div class="form__separator">
+          <div class="separator__line"></div>
+          <button class="separator__button" id="calculate-btn">
+            <span></span>
+          </button>
+        </div>  
+      </section>
+
+      <!-- Print Data -->
+      <div class="card__printer">
+        <p><span id="years-printer" class="printer__color">- -</span> years</p>
+        <p><span id="months-printer" class="printer__color">- -</span> months</p>
+        <p><span id="days-printer" class="printer__color">- -</span> days</p>
+      </div>
+
+    </section>
+  </main>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
