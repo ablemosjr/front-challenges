@@ -1,4 +1,6 @@
-	Desafios Front-end 
+<br>
+
+ 	Desafios Front-end
 
 Repositório destinado a treinar e melhorar minhas habilidades de codificação por meio de projetos realistas.
 
@@ -13,6 +15,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 	- [HBO Max](#hbomax)
    	- [Spotify](#spotify)
    	- [Age Caculator](#agecalc)
+   	- [Advice app](#adviceapp)
 - [Autor](#autor)
 
 ## Projetos
@@ -87,7 +90,7 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Spotify (responsivo)
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/248385951-69ba10cb-f79c-4cb4-9ae3-27c861b41e73.png" alt="HBO Max" width="400"/>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/248385951-69ba10cb-f79c-4cb4-9ae3-27c861b41e73.png" alt="Spotify" width="400"/>
 
 - Pasta projeto: [spotify](https://github.com/ablemosjr/front-challenges/tree/main/spotify)
 - Live Site URL: [page-spotify.app](https://page-spotify.netlify.app/)
@@ -98,11 +101,23 @@ Repositório destinado a treinar e melhorar minhas habilidades de codificação 
 
 #### Age Calculator (responsivo)
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/249604279-901e2142-cf2d-441a-93a8-fd04cb1475df.png" alt="HBO Max" width="400"/>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/249604279-901e2142-cf2d-441a-93a8-fd04cb1475df.png" alt="Age Calculator" width="400"/>
 
 - Pasta projeto: [age-calculator](https://github.com/ablemosjr/front-challenges/tree/main/age-calculator)
 - Live Site URL: [age-calculator.app](https://front-agecalculator.netlify.app/)
 - Desafio: [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q)
+
+
+<div id='adviceapp'/>
+
+#### Advice generator app (responsivo)
+
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/89210954/250645218-e70f0b52-b3fa-4d8f-bf0c-efcfc522f384.png" alt="Advice app" width="400"/>
+
+- Pasta projeto: [age-calculator](https://github.com/ablemosjr/front-challenges/tree/main/advice-api)
+- Live Site URL: [advicegenerator.app](https://front-advicegenerator.netlify.app/)
+- Desafio: [Advice generator app app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+
 
 <br>
 
