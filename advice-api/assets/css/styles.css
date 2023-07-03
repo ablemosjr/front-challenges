@@ -75,8 +75,11 @@ main {
 }
 
 @media screen and (min-width: 376px) {
-  .advice__card { max-width: 600px; }
-
+  .advice__card { 
+    max-width: 600px; 
+    width: 540px;
+  }
+  
   .card__quotation::after {
     background-image: url('../images/pattern-divider-desktop.svg');
   }
