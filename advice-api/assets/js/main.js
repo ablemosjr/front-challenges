@@ -25,11 +25,13 @@ AdviceApi.printer = () => {
     const newHtml = `
     <h1 class="card__title">Advice &nbsp#<span>${advice.id}</span></h1>
 
-    <p class="card__quotation">${advice.description}</p>
+    <p class="card__quotation">"${advice.description}"</p>
     
-    <button id="btn-generate">
-      <img src="/assets/images/icon-dice.svg" alt="Dice button">
-    </button>
+    <div class="card__button">
+      <button id="btn-generate">
+        <img src="/assets/images/icon-dice.svg" alt="Dice button">
+      </button>
+    </div>
     `;
 
     const adviceCard = document.querySelector('#advice-card')
