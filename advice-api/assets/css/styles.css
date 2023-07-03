@@ -1,0 +1,86 @@
+
+@import url('global.css');
+
+body {
+  background-color: var(--darkBlue); 
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+main { 
+  margin: 0 auto; 
+  padding: 0 16px;
+}
+
+.advice__card {
+  background-color: var(--darkGrayish);
+  max-width: 540px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px 30px 0 30px;
+}
+
+.card__title {
+  font-size: .575rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--neonGreen);
+}
+
+.card__title > span {
+  font-size: .575rem;
+  letter-spacing: 3px;
+  color: var(--neonGreen);
+}
+
+.card__quotation {
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--lightCyan);
+  margin-top: 20px;
+}
+
+.card__quotation::after {
+  content: '';
+  background-image: url('../images/pattern-divider-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  padding-top: 6%;
+  margin-top: 30px;
+}
+
+.card__button { 
+  translate: 0 50%; 
+  display: flex;
+  justify-content: center;
+}
+
+.card__button > button {
+  padding: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--neonGreen);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card__button > button:hover {
+  box-shadow: 0px 0px 20px var(--neonGreen);
+}
+
+@media screen and (min-width: 376px) {
+  .advice__card { 
+    max-width: 600px; 
+    width: 540px;
+  }
+  
+  .card__quotation::after {
+    background-image: url('../images/pattern-divider-desktop.svg');
+  }
+}
